@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ["DisplayBold", "sans-serif"], 'brød': ["Brød", "sans-serif"], 'kilde': ["LightItalic", "sans-serif"]
+        'display': ["DisplayBold", "sans-serif"],
+        'brød': ["Brød", "sans-serif"],
+        'kilde': ["LightItalic", "sans-serif"]
       },
     },
   },

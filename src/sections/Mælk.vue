@@ -105,7 +105,7 @@ function setBodyBackgroundToBlue() {
         <div id="mælkTekst" class="h-fit w-[30vw] self-start">
           <h2 class="font-display text-left leading-[100%] py-[6%]">Renterne stiger<br/>sammen med inflationen</h2>
           <p class="font-brød text-left h-fit">I takt med at inflationen stiger, vil renterne på boliglån også stige. På den måde sikre bankerne at realrenten forbliver positiv, så de ikke taber penge.  
-          Grafen viser <p class="font-display inline">den procentvise rente på langtidslån</p> siden 1999.   
+          Grafen viser <p class="font-display inline rød-text">den procentvise rente på langtidslån</p> siden 1999.   
           Inflationen bliver påvirket af mange faktorer, bl.a. COVID-19, krig, udbud og efterspørgsel, valutakurser og energipriser.   
           Det er første gang siden finanskrisen i 2008, at renterne har en opadgående tendens over længere tid.
           <br/>
@@ -118,6 +118,7 @@ function setBodyBackgroundToBlue() {
         <svg class="absolute top-[-1.5%] left-[8.5%] w-[85%] h-full" viewBox="0 0 900 500">
           <polyline id="renterPath" points="4.44 94 7.61 113.72 23.84 87.2 31.67 18.95 41.19 44.12 48.76 32.27 60.62 64.09 74.12 20.77 80.09 56.57 88.18 87.44 97.04 57.59 101.11 109.91 125.15 89.65 130.14 113.82 149.85 105.02 153.37 148.63 162.39 137.6 167.03 149.25 169.34 129.13 185.84 147.48 196.83 132.08 210.24 156.44 210.57 173.82 225.65 157.36 228.84 183.59 242.7 164.17 248.48 174.64 260.87 141.71 281.3 168.45 296.63 149.83 306.47 111.36 316.54 145.24 325.76 119.03 333.3 141.18 346.11 76.85 346.25 109.4 358.55 63.12 363.31 116.21 362.1 153.75 385.59 165.29 395.11 190.45 401.36 210.36 418.66 215.01 422.7 179.81 437.01 163.3 443.5 181.05 447.33 215.28 459.71 229.04 485.46 247.95 500.86 269.12 513.6 225.76 521.66 250.11 529.64 234.68 550.14 285.82 553.05 307.69 564.61 308.38 580.89 254.38 591.37 284.67 615.14 300.56 636.98 311.51 645.81 335.91 659.31 312.85 662.73 330.41 687.4 338.4 709.28 383.51 708.09 407.31 726 372.94 721.96 408.14 741.08 338.48 755.85 410.17 773.76 375.8 777.78 394.85 791.89 335.02 801.96 386.89 809.06 307.11 824.05 250.86 828.06 229.4 827.93 277.86 844.68 192.78 850.98 245.97 863 175.07 867.34 191.25" stroke="#D41A2A" stroke-width="8" fill="none" />
         </svg>
+        <p class="pt-[2%] pl-[80%] font-kilde text-sm">Kilde: finansdanmark.dk</p>
       </div>
     </div>
    </section>

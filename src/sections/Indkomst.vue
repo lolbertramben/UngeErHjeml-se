@@ -64,30 +64,32 @@ onMounted(() => {
   <!-- Dette er sektionen for indkomst/boligpris -->
   <section id="IndkomstPriser" class="w-screen h-screen grid grid-cols-2 gap-x-[5vw] justify-items-center items-center p-[8vw]">
     <!-- Indkomst og tekst til boligpriser -->
-    <div class="w-full h-full col-start-1 row-span-2 flex flex-cols-2 flex-col gap-[10vw]">
-      <div id="Indkomst" class="w-full h-full">
+    <div class="w-full h-full col-start-1 row-span-2 flex flex-cols-2 flex-col gap-[5vw]">
+      <div id="Indkomst" class="w-[80%] h-fit self-end">
         <img :src="Indkomst" class="w-full h-fit"/>
-        <svg id="indkomstLine" class="absolute w-[75%] left-[22%] top-[37.5%]" viewBox="0 0 380 25">
+        <svg id="indkomstLine" class="absolute w-[75%] left-[22%] top-[45%]" viewBox="0 0 380 25">
           <polyline id="indkomstLinePath" points="0 18.4 49.9 17.8 92.5 14.4 123.6 14.2 149.7 13.4 159.8 10.2 182.6 8.2 213.3 16.8 231.8 21 256 22.8 278.9 20.1 300.4 14.4 327.1 14.2 348.6 7.2 360.6 4.6 379.8 10.1" stroke="#6cc5c1" stroke-width="10" fill="none" />
         </svg>
+        <p class="pt-[2%] pl-[71%] font-kilde text-sm">Kilde: statistikbanken.dk</p>
       </div>
-      <div id="priserTekst" class="w-full h-fit pb-[8%]">
+      <div id="priserTekst" class="w-[80%] h-fit pb-[8%] self-end">
         <h2 class="w-full font-display text-right">Boligpriserne stiger</h2>
-        <p class="font-brød text-right">Til gengæld stiger boligpriserne fortsat til rekordhøjder. Grafen illustrerer <p class="font-display inline">prisen pr. kvadratmeter</p> i 23 år, inflationsreguleret. Sammenligner du de to, giver det god mening, at unges økonomi i dag ikke længere strækker lige så langt på boligmarkedet som deres forældres gjorde.  </p>
+        <p class="font-brød text-right">Til gengæld stiger boligpriserne fortsat til rekordhøjder. Grafen illustrerer <p class="font-display inline rød-text">prisen pr. kvadratmeter</p> i 23 år, inflationsreguleret. Sammenligner du de to, giver det god mening, at unges økonomi i dag ikke længere strækker lige så langt på boligmarkedet som deres forældres gjorde.  </p>
       </div>
     </div>
 
     <!-- Boligpriser og tekst til indkomst -->
     <div class="w-full h-full col-start-2 row-span-2 flex flex-cols-2 flex-col gap-[10vw]">
-      <div id="indkomstTekst" class="w-full h-fit">
+      <div id="indkomstTekst" class="w-[70%] h-fit">
         <h2 class="font-display w-full font-bold">Unges indkomst</h2>
-        <p class="font-brød">... er ikke steget i 23 år.<br/>Grafen til venstre illustrerer 20-35 - åriges <p class="font-display inline">gennemsnitlige årlige indkomst</p> før skat, inflationsreguleret.</p>
+        <p class="font-brød">... er ikke steget i 23 år.<br/>Grafen til venstre illustrerer 20-35 - åriges <p class="font-display inline blå-text">gennemsnitlige årlige indkomst</p> før skat, inflationsreguleret.</p>
       </div>
-      <div id="Boligpris" class="w-full h-full">
+      <div id="Boligpris" class="w-[80%] h-full">
         <img :src="Boligpris" class="w-full h-fit"/>
-        <svg id="boligprisLine" class="absolute w-[77%] left-[20%] top-[20.5%]" viewBox="0 0 380 180">
+        <svg id="boligprisLine" class="absolute w-[77%] left-[20%] top-[12%]" viewBox="0 0 380 180">
           <polyline id="boligprisLinePath" points="2.36 166.6 45.26 140.15 66.87 128.59 89.78 115.94 104.01 112.46 116.69 99.18 132.45 78.61 150.74 50.01 164.05 50.06 178.05 62.6 190.74 76.22 204.58 70.29 231.12 77.98 259.03 70.29 316.69 34.39 331.15 35.07 345.45 24.01 360.44 5.27 373.36 9.6" stroke="#db172b" stroke-width="10" fill="none" />
         </svg>
+        <p class="pt-[2%] pl-[82%] font-kilde text-sm">Kilde: boliga.dk</p>
       </div>
     </div>
   </section>
