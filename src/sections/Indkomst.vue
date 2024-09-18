@@ -71,17 +71,17 @@ onMounted(() => {
           <polyline id="indkomstLinePath" points="0 18.4 49.9 17.8 92.5 14.4 123.6 14.2 149.7 13.4 159.8 10.2 182.6 8.2 213.3 16.8 231.8 21 256 22.8 278.9 20.1 300.4 14.4 327.1 14.2 348.6 7.2 360.6 4.6 379.8 10.1" stroke="#6cc5c1" stroke-width="10" fill="none" />
         </svg>
       </div>
-      <div id="priserTekst" class="w-full h-fit">
-        <h2 class="w-full font-bold text-right">Titel på graf</h2>
-        <p class="text-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, facere, eum quasi temporibus quae itaque facilis necessitatibus, ab fugit aliquid eos consequuntur voluptates tenetur vel perferendis. Enim architecto saepe perspiciatis?</p>
+      <div id="priserTekst" class="w-full h-fit pb-[8%]">
+        <h2 class="w-full font-bold text-right">Boligpriserne stiger</h2>
+        <p class="text-right">Til gengæld stiger boligpriserne fortsat til rekordhøjder. Grafen illustrerer prisen pr. kvadratmeter i 23 år, inflationsreguleret. Sammenligner du de to, giver det god mening, at unges økonomi i dag ikke længere strækker lige så langt på boligmarkedet som deres forældres gjorde.  </p>
       </div>
     </div>
 
     <!-- Boligpriser og tekst til indkomst -->
     <div class="w-full h-full col-start-2 row-span-2 flex flex-cols-2 flex-col gap-[10vw]">
       <div id="indkomstTekst" class="w-full h-fit">
-        <h2 class="w-full font-bold">Titel på graf</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, facere, eum quasi temporibus quae itaque facilis necessitatibus, ab fugit aliquid eos consequuntur voluptates tenetur vel perferendis. Enim architecto ofte perspiciatis?</p>
+        <h2 class="w-full font-bold">Unges indkomst</h2>
+        <p>... er ikke steget i 23 år.<br/>Grafen til venstre illustrerer 20-35 - åriges gennemsnitlige årlige indkomst før skat, inflationsreguleret.</p>
       </div>
       <div id="Boligpris" class="w-full h-full">
         <img :src="Boligpris" class="w-full h-fit"/>
@@ -94,21 +94,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-h1 {
-  font-size: 5vw;
-}
-h2 {
-  font-size: 2vw;
-}
-h3 {
-  font-size: 1.5vw;
-}
-.lys-text {
-  color: white;
-}
-.mørk-text {
-  color: black;
-}
 
 @keyframes drawLine {
   from {

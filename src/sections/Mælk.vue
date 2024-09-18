@@ -96,15 +96,21 @@ function setBodyBackgroundToBlue() {
   <section id="Mææælk" class="w-screen h-screen grid grid-cols-1 justify-items-center items-center p-[5vw]">
     <div class="flex gap-[5vw] w-full h-[60%] justify-center items-center px-[5vw]">
       <div class="flex flex-col items-end self-start h-full justify-between">
-        <div id="Mælk" class="w-[10vw] h-[18vw]">
+        <div id="Mælk" class="w-[10vw] h-[20vw]">
           <img :src="mælk" class="w-full h-full"/>
-          <div class="absolute grid grid-cols-1 top-[48%] right-[0%] justify-items-center items-center w-[50%] h-[30%]">
+          <div class="absolute grid grid-cols-1 top-[55%] right-[0%] justify-items-center items-center w-[50%] h-[30%]">
             <h3 id="mælkepris" class="font-bold text-center">{{ mælkepris.toFixed(2) }},-</h3>
           </div>
         </div>
         <div id="mælkTekst" class="h-fit w-[30vw] self-start">
-          <h2 class="font-bold text-right">Titel på dette diagram</h2>
-          <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis enim nulla libero, esse, quia sit neque optio voluptatum ipsam earum aliquid fuga deleniti nobis accusantium assumenda harum quo. Ut, laboriosam.</p>
+          <h2 class="font-bold text-letf leading-[100%] py-[6%]">Renterne stiger<br/>sammen med inflationen</h2>
+          <p class="text-left h-fit">I takt med at inflationen stiger, vil renterne på boliglån også stige. På den måde sikre bankerne at realrenten forbliver positiv, så de ikke taber penge.  
+          Grafen viser den procentvise rente på langtidslån siden 1999.   
+          Inflationen bliver påvirket af mange faktorer, bl.a. COVID-19, krig, udbud og efterspørgsel, valutakurser og energipriser.   
+          Det er første gang siden finanskrisen i 2008, at renterne har en opadgående tendens over længere tid.
+          <br/>
+          Når renterne stiger, og dermed prisen på boliglån, bliver det dyere at købe ejedom.    
+          </p>
         </div>
       </div>
       <div id="Renter" class="w-fit h-full self-start">
@@ -118,21 +124,6 @@ function setBodyBackgroundToBlue() {
 </template>
 
 <style scoped>
-h1 {
-  font-size: 5vw;
-}
-h2 {
-  font-size: 2vw;
-}
-h3 {
-  font-size: 1.1vw;
-}
-.lys-text {
-  color: white;
-}
-.mørk-text {
-  color: black;
-}
 
 @keyframes drawLineReverse {
   from {
@@ -149,7 +140,7 @@ h3 {
 }
 
 .animate-renter {
-  animation: drawLineReverse 8s forwards;
+  animation: drawLineReverse 6s forwards;
 }
 
 .hidden-renter {

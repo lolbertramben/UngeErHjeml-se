@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 body {
   background: #ff8800;
@@ -9,6 +17,33 @@ body {
 section {
   background-color: #ff8800;
 }
+h1 {
+  font-size: 5vw;
+  color: #4c0519;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  font-size: 2vw;
+  color: #4c0519;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+h3 {
+  font-size: 1.5vw;
+  color: #4c0519;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 #Afrunding {
   background-color: #0F3067;
+}
+.lys-text {
+  color: #ffedc9;
 }
