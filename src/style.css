@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #ff8800;
+  overflow-x: hidden;
+}
+section {
+  background-color: #ff8800;
+}
+#Afrunding {
+  background-color: #0F3067;
+}
