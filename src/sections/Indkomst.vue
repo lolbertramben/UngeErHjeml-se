@@ -72,16 +72,16 @@ onMounted(() => {
         </svg>
       </div>
       <div id="priserTekst" class="w-full h-fit pb-[8%]">
-        <h2 class="w-full font-bold text-right">Boligpriserne stiger</h2>
-        <p class="text-right">Til gengæld stiger boligpriserne fortsat til rekordhøjder. Grafen illustrerer prisen pr. kvadratmeter i 23 år, inflationsreguleret. Sammenligner du de to, giver det god mening, at unges økonomi i dag ikke længere strækker lige så langt på boligmarkedet som deres forældres gjorde.  </p>
+        <h2 class="w-full font-display text-right">Boligpriserne stiger</h2>
+        <p class="font-brød text-right">Til gengæld stiger boligpriserne fortsat til rekordhøjder. Grafen illustrerer <p class="font-display inline">prisen pr. kvadratmeter</p> i 23 år, inflationsreguleret. Sammenligner du de to, giver det god mening, at unges økonomi i dag ikke længere strækker lige så langt på boligmarkedet som deres forældres gjorde.  </p>
       </div>
     </div>
 
     <!-- Boligpriser og tekst til indkomst -->
     <div class="w-full h-full col-start-2 row-span-2 flex flex-cols-2 flex-col gap-[10vw]">
       <div id="indkomstTekst" class="w-full h-fit">
-        <h2 class="w-full font-bold">Unges indkomst</h2>
-        <p>... er ikke steget i 23 år.<br/>Grafen til venstre illustrerer 20-35 - åriges gennemsnitlige årlige indkomst før skat, inflationsreguleret.</p>
+        <h2 class="font-display w-full font-bold">Unges indkomst</h2>
+        <p class="font-brød">... er ikke steget i 23 år.<br/>Grafen til venstre illustrerer 20-35 - åriges <p class="font-display inline">gennemsnitlige årlige indkomst</p> før skat, inflationsreguleret.</p>
       </div>
       <div id="Boligpris" class="w-full h-full">
         <img :src="Boligpris" class="w-full h-fit"/>

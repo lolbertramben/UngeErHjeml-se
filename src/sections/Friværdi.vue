@@ -59,13 +59,13 @@
         </div>
       </div>
       <div id="huslejeTekst" class="h-full">
-        <h2 class="font-bold">Ejendomme er opsparing</h2>
-        <p>Prisstigningerne på boligmarkedet gør boligejerne ‘rigere’ i form af friværdi. Din formue stiger i takt med værdien på din ejendom. 
+        <h2 class="font-display">Ejendomme er opsparing</h2>
+        <p class="font-brød">Prisstigningerne på boligmarkedet gør boligejerne ‘rigere’ i form af friværdi. Din <p class="font-display inline">formue stiger i takt med værdien på din ejendom.</p> 
         Friværdi er en fordel, hvis du ønsker at låne penge eller invistere. Det bliver et  økonomisk sikkerhedsnet og en langsigtet opsparring.
         Hvis du fx senere sælger din bolig og køber noget billigere, vil du have en fortjeneste.
-        Dette er især en fordel for de meget rige, hvis udbytte er betydeligt større.
+        Dette er <p class="font-display inline">især en fordel for de meget rige</p>, hvis udbytte er betydeligt større.
         </p>
-        <p id="lejlighedTekst" class="pt-[6%]">Men i takt med at boligpriserne stiger, vil huslejen også stige, fordi grunden bliver mere værd.
+        <p id="lejlighedTekst" class="font-brød pt-[6%]">Men i takt med at boligpriserne stiger, vil huslejen også stige, fordi grunden bliver mere værd.
         Dermed bliver det dyrere at bo til leje, og dermed mindskes folks mulighed for en opsparing. 
         </p>
       </div>

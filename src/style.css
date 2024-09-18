@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 .rubik {
   font-family: "Rubik", sans-serif;
@@ -46,4 +45,21 @@ h3 {
 }
 .lys-text {
   color: #ffedc9;
+}
+
+@layer base {
+  @font-face {
+    font-family: "DisplayBold";
+    src: url('/src/assets/fonts/Rubik-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: "Brød";
+    src: url('/src/assets/fonts/Rubik-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: "LightItalic";
+    src: url('/src/assets/fonts/Rubik-LightItalic.ttf') format('truetype');
+  }
 }

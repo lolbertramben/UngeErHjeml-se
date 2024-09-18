@@ -99,13 +99,13 @@ function setBodyBackgroundToBlue() {
         <div id="Mælk" class="w-[10vw] h-[20vw]">
           <img :src="mælk" class="w-full h-full"/>
           <div class="absolute grid grid-cols-1 top-[55%] right-[0%] justify-items-center items-center w-[50%] h-[30%]">
-            <h3 id="mælkepris" class="font-bold text-center">{{ mælkepris.toFixed(2) }},-</h3>
+            <h3 id="mælkepris" class="font-display text-center">{{ mælkepris.toFixed(2) }},-</h3>
           </div>
         </div>
         <div id="mælkTekst" class="h-fit w-[30vw] self-start">
-          <h2 class="font-bold text-letf leading-[100%] py-[6%]">Renterne stiger<br/>sammen med inflationen</h2>
-          <p class="text-left h-fit">I takt med at inflationen stiger, vil renterne på boliglån også stige. På den måde sikre bankerne at realrenten forbliver positiv, så de ikke taber penge.  
-          Grafen viser den procentvise rente på langtidslån siden 1999.   
+          <h2 class="font-display text-left leading-[100%] py-[6%]">Renterne stiger<br/>sammen med inflationen</h2>
+          <p class="font-brød text-left h-fit">I takt med at inflationen stiger, vil renterne på boliglån også stige. På den måde sikre bankerne at realrenten forbliver positiv, så de ikke taber penge.  
+          Grafen viser <p class="font-display inline">den procentvise rente på langtidslån</p> siden 1999.   
           Inflationen bliver påvirket af mange faktorer, bl.a. COVID-19, krig, udbud og efterspørgsel, valutakurser og energipriser.   
           Det er første gang siden finanskrisen i 2008, at renterne har en opadgående tendens over længere tid.
           <br/>
