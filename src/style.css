@@ -3,26 +3,31 @@
 @tailwind utilities;
 
 body {
-  background: #ff8800;
+  background: #ffedc9;
   overflow-x: hidden;
 }
 section {
-  background-color: #ff8800;
+  background-color: #ffedc9;
 }
 h1 {
-  font-size: 5vw;
-  color: #4c0519;
+  font-size: 5.5vw;
+  color: #ff8800;
 }
 h2 {
-  font-size: 2vw;
-  color: #4c0519;
+  font-size: 3vw;
+  color: #0F3067;
 }
 h3 {
   font-size: 1.5vw;
-  color: #4c0519;
+  color: #0F3067;
 }
 p {
-  color: #4c0519;
+  color: #0F3067;
+  font-size: 1.2vw;
+}
+span {
+  color: #0F3067;
+  font-size: 1.2vw;
 }
 #Afrunding {
   background-color: #0F3067;
@@ -35,6 +40,9 @@ p {
 }
 .rød-text {
   color: #db172b;
+}
+.p-inline {
+  display: inline;
 }
 
 @layer base {

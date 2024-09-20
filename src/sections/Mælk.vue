@@ -24,11 +24,16 @@ onMounted(() => {
 
   tl.fromTo("#Mælk", 
     { y: "-100vh", x: "15vw", scale: 3, opacity: 0 }, // Starttilstand
-    { y: "0", x: "20vw", scale: 3, opacity: 1, duration: 1, ease: "power1.out", onStart: resetCounter, onComplete: startCounter } // Sluttilstand
+    { y: "100%", x: "18vw", scale: 3, opacity: 1, duration: 1, ease: "power1.out", onStart: resetCounter, onComplete: startCounter } // Sluttilstand
   )
-  .to("#Mælk", { x: "", scale: 1, duration: 1, ease: "power1.inOut" }, "+=1.5")
+  .to("#Mælk", { x: "0%", y: "0%", scale: 1, duration: 1, ease: "power1.inOut" }, "+=1.5")
   .from("#Renter", { x: "100%", opacity: 0, duration: 1, ease: "power1.out", onStart: removeRenter, onComplete: startRenterAnimations }, "-=0.5")
   .from("#mælkTekst", { y: "100%", opacity: 0, duration: 1, ease: "power1.out" }, "+=0.5")
+  .to({}, { duration: 1.2 }) // Tilføj ekstra scrolltid
+  .to("#Mælk", { x: "0%", opacity: 0, y: "-100%", duration: 1, ease: "power1.inOut" }, "+=1.5")
+  .to("#mælkTekst", { y: "-30%", duration: 1, ease: "power1.inOut" }, "-=1")
+  .from("#inflationsObservation", { opacity: 0, duration: 1, ease: "power1.out"}, "-=0.5")
+  .from("#finanskrisenObservation", { opacity: 0, duration: 1, ease: "power1.out" }, "+=0")
   .to({}, { duration: 1.2 }); // Tilføj ekstra scrolltid
 });
 
@@ -93,7 +98,7 @@ function setBodyBackgroundToBlue() {
 
 <template>
   <!-- Dette er sektionen for Mæææææælk-->
-  <section id="Mææælk" class="w-screen h-screen grid grid-cols-1 justify-items-center items-center p-[5vw]">
+  <section id="Mææælk" class="w-screen h-screen grid grid-cols-1 justify-items-center items-start p-[5vw]">
     <div class="flex gap-[5vw] w-full h-[60%] justify-center items-center px-[5vw]">
       <div class="flex flex-col items-end self-start h-full justify-between">
         <div id="Mælk" class="w-[10vw] h-[20vw]">
@@ -105,11 +110,9 @@ function setBodyBackgroundToBlue() {
         <div id="mælkTekst" class="h-fit w-[30vw] self-start">
           <h2 class="font-display text-left leading-[100%] py-[6%]">Renterne stiger<br/>sammen med inflationen</h2>
           <p class="font-brød text-left h-fit">I takt med at inflationen stiger, vil renterne på boliglån også stige. På den måde sikre bankerne at realrenten forbliver positiv, så de ikke taber penge.  
-          Grafen viser <p class="font-display inline rød-text">den procentvise rente på langtidslån</p> siden 1999.   
-          Inflationen bliver påvirket af mange faktorer, bl.a. COVID-19, krig, udbud og efterspørgsel, valutakurser og energipriser.   
-          Det er første gang siden finanskrisen i 2008, at renterne har en opadgående tendens over længere tid.
-          <br/>
-          Når renterne stiger, og dermed prisen på boliglån, bliver det dyere at købe ejedom.    
+            Grafen viser <span class="font-display inline rød-text">den procentvise rente på langtidslån</span> siden 1999.   
+            <br/><br/><span id="inflationsObservation">Inflationen bliver påvirket af mange faktorer, bl.a. COVID-19, krig, udbud og efterspørgsel, valutakurser og energipriser.</span>
+            <br/><br/><span id="finanskrisenObservation">Det er første gang siden finanskrisen i 2008, at renterne har en opadgående tendens over længere tid.</span>
           </p>
         </div>
       </div>
